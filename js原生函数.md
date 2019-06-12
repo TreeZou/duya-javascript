@@ -41,3 +41,7 @@ Object.prototype.toString.call( 42 ) // "[object Number]"
 Object.prototype.toString.call( '42' ) // "[object String]"
 Object.prototype.toString.call( true ) // "[object Boolean]"
 ```
+valueOf()
+
+### 原生函数作为构造行数
+
