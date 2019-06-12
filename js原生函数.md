@@ -12,6 +12,7 @@ js常用的原生函数有：
 - Error()
 - Symbol() (ES6语法)
 
+### String
 ```
 // String
 
@@ -27,7 +28,17 @@ console.log(hll instanceof String)
 // object
 // true
 ```
+- chatAt //方法可返回指定位置的字符
+- indexOf // 寻找某元素的`开始`位置
+- lastIndexOf // 寻找某元素的`结束`位置
+- subStr(start, length) // 可在字符串中抽取从 start 下标开始的指定数目的字符 返回新的字符串
+- subString(start, end) // 方法用于提取字符串中介于两个指定下标之间的字符
+- slice // 方法可从已有的数组中返回选定的元素
+- toUpperCase // 字符串全都变成大写
+- toLowerCase // 字符串全都变成小写
+- trim // 字符串去除两边的空格
 
+### Object相关知识
 相关Api
 Object.prototyppe.toString().call(/* 参数 */) // 用来识别typeof类型为Object的参数的内部分类 ---> [[class]]
 ```
