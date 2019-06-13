@@ -59,3 +59,21 @@ valueOf()
 ### Symbol()
 > 符号并非对象，而是一种简单标量基本类型
 
+### 讲一下JSON序列化的一些`偏激`方法
+当要序列化的对象中具有toJSON方法的时候，JSON.stringify()会以toJSON方法进行解析。当JSON序列化对象的时候，如果出现死循环，会出现错误的`学生报道`
+
+> tip: 在JSON序列化的时候有一些不怎么友善的`小东西`（不安全），我们尽可能的避免这些错误，这些包括：undefined、function、symbol（这些会自动化为null），但值得注意的是JSON.stringify( undefined ) =>  undefined  JSON.stringify(function() {}) => undefined JSON.stringify({a: 1, b: function() {}}) => "{"a":1}"
+
+```
+var hll = {
+  val: [1, 2, 3],
+  toJSON: function() {
+    return "["+ this.val.slice(1).join("-") +"]"
+  }
+}
+
+JSON.stringify(hll)
+
+// 执行结果 ""[2-3]""
+```
+
