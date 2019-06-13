@@ -76,4 +76,25 @@ JSON.stringify(hll)
 
 // 执行结果 ""[2-3]""
 ```
+```
+var r = {
+	a: [1, 2, 3],
+	b: 1,
+	c: 'dd',
+	d: function() {}
+}
+
+JSON.stringify(r, function (k, v) { if(k !== 'b') return v }, 3)
+
+// 执行结果
+// "{
+//    "a": [
+//       1,
+//       2,
+//       3
+//    ],
+//    "c": "dd"
+// }"
+```
+this is very amazing!
 
