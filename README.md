@@ -2,7 +2,7 @@
 
 > 静下心来，将知识梳理一遍，把会的、不会的、清楚的亦或是不清楚的，好好地学习一边 --毒牙君  
 
-[在线访问地址](https://dyjunzou.github.io/code-doc/)   
+[在线访问地址](https://j-duya.github.io/code-doc/)   
 
  ```不疯魔何以成魔```  
  
