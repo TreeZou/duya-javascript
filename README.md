@@ -7,8 +7,6 @@
 
 > 静下心来，将知识梳理一遍，把会的、不会的、清楚的亦或是不清楚的，好好地学习一边 --毒牙君
 
-[在线访问地址](https://j-duya.github.io/code-doc/)
-
 `2020`（♥ 爱我爱你爱大家爱学习）
 
 ## 目录 📃
@@ -18,7 +16,7 @@
 1.  [js 原生函数](./前端/js原生函数.md)
 2.  [闭包](./前端/closure.md)
 3.  [前端继承](./前端/前端继承.md)
-4.  [javascript 问题回顾](./javascript学习/README.md)
+4.  [javascript 问题回顾](./javascript学习/基础知识/README.md)
 
 ### 📚 数据结构与算法
 
