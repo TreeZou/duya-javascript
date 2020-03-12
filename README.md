@@ -9,7 +9,7 @@
 
 [在线访问地址](https://j-duya.github.io/code-doc/)
 
-🔞`很多人都只知道把自己情感/工作失败的原因责怪到其他人身上，久而久之，他就变成一事无成的Loser，请远离这些人，这些人只是纯种的吐槽者（指向他人的吐槽）`
+`2020`（♥ 爱我爱你爱大家爱学习）
 
 ## 目录 📃
 
@@ -18,6 +18,7 @@
 1.  [js 原生函数](./前端/js原生函数.md)
 2.  [闭包](./前端/closure.md)
 3.  [前端继承](./前端/前端继承.md)
+4.  [javascript 问题回顾](./javascript学习/README.md)
 
 ### 📚 数据结构与算法
 
@@ -48,3 +49,5 @@
 ### 📚 设计模式
 
 1.  [GOF 设计模式](./设计模式/GOF设计模式.md)
+
+@Author <img src="https://avatars0.githubusercontent.com/u/34503154?s=460&v=4"/>[duya](https://github.com/J-DuYa)
