@@ -10,9 +10,11 @@
 <image src="https://www.easy-mock.com/public/images/easy-mock.png" width="600" height="200" />
 
 2. [patorjk](http://patorjk.com/)（console.log发布信息）
+```
        _                              
       (_)_  ______  ____  ____  __  __
      / / / / / __ \/_  / / __ \/ / / /
     / / /_/ / / / / / /_/ /_/ / /_/ / 
  __/ /\__,_/_/ /_/ /___/\____/\__,_/  
 /___/                                 
+```
