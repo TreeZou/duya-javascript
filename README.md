@@ -3,13 +3,13 @@
  * @LastEditors: DuYa
  -->
 
-# 毒牙君知识体系梳理
+# 🍅 知识体系梳理
 
-> 静下心来，将知识梳理一遍，把会的、不会的、清楚的亦或是不清楚的，好好地学习一边 --毒牙君
+🍅 不想变质了
 
 `2020`（♥ 爱我爱你爱大家爱学习）
 
-## 目录 📃
+## 📃 目录
 
 ### 📚 js 基础知识
 
@@ -18,7 +18,7 @@
 3.  [前端继承](./前端/前端继承.md)
 4.  [javascript 问题回顾](./javascript学习/基础知识/README.md)
 
-### 📚 数据结构与算法
+### 📊 数据结构与算法
 
 1. [算法](./数据结构/算法.md)
 2. [数据结构基础知识](./数据结构/数据结构概念.md)
@@ -52,8 +52,16 @@
 19. [最小的 k 个数](./Leetcode/最小的k个数.md)
 20. [使数组唯一的最小增量](./Leetcode/使数组唯一的最小增量.md)
 
-### 📚 设计模式
+### 🎨 设计模式
 
 1.  [GOF 设计模式](./设计模式/GOF设计模式.md)
 
-@Author <img src="https://avatars0.githubusercontent.com/u/34503154?s=460&v=4"/>[duya](https://github.com/J-DuYa)
+### 🍳 简单技术技巧
+
+[demo 链接](./javascript学习/小技巧/README.md)
+
+#### 🔗 博客链接
+
+[csdn](https://blog.csdn.net/qq_35023116)
+
+@Author <img src="https://avatars0.githubusercontent.com/u/34503154?s=460&v=4" width="100" height="100"/>[duya](https://github.com/J-DuYa)

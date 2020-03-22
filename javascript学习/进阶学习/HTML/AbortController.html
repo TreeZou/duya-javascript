@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>如何优雅的取消 javascript 异步任务</title>
+  </head>
+  <body>
+    <script>
+      console.log("执行计划", AbortController, fetch);
+
+      // 实例化AbortController对象
+
+      const Abort = new AbortController(),
+        signal = Abort.signal;
+
+      fetch("http://kaysonli.com", {
+        signal: signal
+      }).catch(error => {
+        console.log("error", error);
+      });
+
+      Abort.abort(); // 中断请求
+    </script>
+  </body>
+</html>
