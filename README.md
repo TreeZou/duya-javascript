@@ -5,7 +5,7 @@
 
 # 🍅 知识体系梳理
 
-🍅 不想变质了
+🍅 不想变质了，慢慢来吧
 
 ## 📃 目录
 
@@ -68,6 +68,6 @@
 
 #### 🙈 每日学习
 
-[day-01 掘金](./每日学习技术/day-01)
+[day-01 掘金](./每日学习技术/day-01.md)
 
 @Author <img src="https://avatars0.githubusercontent.com/u/34503154?s=460&v=4" width="100" height="100"/>[duya](https://github.com/J-DuYa)
