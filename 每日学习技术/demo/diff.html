@@ -1,0 +1,156 @@
+<!--
+ * @Author: DuYa
+ * @LastEditors: DuYa
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Diff</title>
+    <style type="text/css">
+      .mt10 {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- demo -->
+    DOM Diff
+    <script>
+      Function.prototype.makeMulti = function() {
+        let l = new String(this);
+        l = l.substring(l.indexOf("/*") + 3, l.lastIndexOf("*/"));
+        return l;
+      };
+
+      let string = function() {
+        /*  ____  ____  _        ____  _  _____ _____
+/  _ \/  _ \/ \__/|  /  _ \/ \/    //    /
+| | \|| / \|| |\/||  | | \|| ||  __\|  __\
+| |_/|| \_/|| |  ||  | |_/|| || |   | |   
+\____/\____/\_/  \|  \____/\_/\_/   \_/   
+                                           */
+      };
+      console.log(string.makeMulti());
+      console.log(/* 其他信息 */);
+    </script>
+    <script type="text/javascript">
+      console.log("*******技术start********");
+    </script>
+    <div class="mt10">> TEST</div>
+    <div id="diff"></div>
+    <script type="text/javascript">
+      // 定义一组空数组
+      let _arr = [];
+      // mock一组虚拟数据 >>>>>>
+      const options = [
+        {
+          value: "zoujun",
+          label: "zoujun",
+          children: [
+            {
+              value: "beijing",
+              label: "beijing",
+              children: [
+                {
+                  value: "xtalpi",
+                  label: "xtalpi"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          value: "jiangsu",
+          label: "Jiangsu",
+          children: [
+            {
+              value: "nanjing",
+              label: "Nanjing",
+              children: [
+                {
+                  value: "xinjiekou",
+                  label: "xin jie kou",
+                  children: [
+                    {
+                      value: "xiaoqu",
+                      label: "xin jie kou"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ];
+
+      const JsonTree = [
+        {
+          tagName: "ul",
+          props: {
+            className: "list",
+            "data-name": "jsontree"
+          },
+          children: "TEST DOM DIFF"
+        },
+        {
+          tagName: "div",
+          props: {
+            className: "list",
+            target: "_blank"
+          },
+          children: [
+            {
+              tagName: "a",
+              props: {
+                href: "https://github.com/J-DuYa/code-doc",
+                "data-name": "jsontree"
+              },
+              children: "✔点击领取学习快乐的君仔"
+            }
+          ]
+        },
+        {
+          tagName: "img",
+          props: {
+            className: "jun mt10",
+            src:
+              "https://avatars0.githubusercontent.com/u/34503154?s=460&u=27393956c904f2ac3aa9b6147418c32b59a0693c&v=4"
+          }
+        }
+      ];
+
+      var diff = document.querySelector("#diff");
+
+      function create_node_element(options) {
+        options.forEach((item, ind) => {
+          _arr.push(item.value);
+          if (item.children) {
+            create_node_element(item.children);
+          }
+        });
+        return newArr;
+      }
+
+      function add_node_create(JsonTree, parent) {
+        JsonTree.forEach((item, ind) => {
+          var element = document.createElement(item.tagName);
+          if (typeof item.children === "string") {
+            element.innerHTML = item.children;
+          } else if (Array.isArray(item.children)) {
+            add_node_create(item.children, element);
+          }
+
+          if (item.props) {
+            for (var i in item.props) {
+              element[i] = item.props[i];
+            }
+          }
+          parent.appendChild(element);
+        });
+      }
+
+      add_node_create(JsonTree, diff);
+    </script>
+  </body>
+</html>
