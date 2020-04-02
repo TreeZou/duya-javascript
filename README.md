@@ -66,4 +66,8 @@
 
 [csdn](https://blog.csdn.net/qq_35023116)
 
+#### 🙈 每日学习
+
+[day-01 掘金](./每日学习技术/day-01)
+
 @Author <img src="https://avatars0.githubusercontent.com/u/34503154?s=460&v=4" width="100" height="100"/>[duya](https://github.com/J-DuYa)
