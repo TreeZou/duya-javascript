@@ -91,5 +91,72 @@
 12. vue3的新特性（2020-9-23阿里和涂鸦智能）
 
 13.
+```javascript
+function fn1(arg) { return arg + 1 }
+function fn2(arg) { return arg * 2 }
+function fn3(arg) { return arg + 3 }
+function fn4(arg) { return arg * 3 }
+
+function compose (...args) {
+    let arr = args.reverse();
+    return function (value) {
+        return arr.reduce((prev, cur) => {
+            return cur(prev)
+        }, value)
+    }
+}
+
+console.log(compose(fn1, fn2, fn3, fn4)(2))
+``` 
 
 14.
+```js
+// axios.request(requestParams)
+// poll().then().catch()
+async function poll (requestParams, { isValid, delay = 1000, maxTimes = 1 }) {
+    let timeout = null;
+    function request () {
+        clearTimeout(timeout);
+        let timeout = null;
+        let result = {
+            status: "success",
+            value: null
+        };
+
+        maxTimes --;
+        axios.request(requestParams)
+        .then(res => {
+            if (isValid) {
+                result = {
+                    status: "success",
+                    value: res
+                };
+            } else if (isValid && maxTimes > 0) {
+                result = request();
+            } else {
+                result = {
+                    status: "failed",
+                    value: "超时"
+                }
+            }
+
+            return result;
+        })
+        .catch(error => {
+            return {
+                status: "failed",
+                value: error
+            }
+        })
+    }
+    return new Promise((resolve, reject) => {
+        try {
+            // 如果maxTimes的次数还有
+            resolve(request());
+        } catch(error) {
+            reject(error);
+        }
+    })
+}
+
+```
