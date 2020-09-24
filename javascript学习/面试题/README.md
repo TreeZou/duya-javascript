@@ -160,3 +160,4 @@ async function poll (requestParams, { isValid, delay = 1000, maxTimes = 1 }) {
 }
 
 ```
+15. Promise.all的实现原理（2020-09-23 涂鸦智能）
