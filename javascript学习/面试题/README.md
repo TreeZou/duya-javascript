@@ -167,3 +167,5 @@ async function poll (requestParams, { isValid, delay = 1000, maxTimes = 1 }) {
 17. 动画的实现方式？怎么评测动画的的流畅度？ （2020-09-23 涂鸦智能）
 
 18. 你所了解的设计模式有哪些？可以说一下订阅发布模式的实现原理吗?（2020-09-23 涂鸦智能）
+
+19. ts中interface和type的区别(2020-09-23 阿里)
