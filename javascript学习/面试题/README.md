@@ -171,3 +171,5 @@ async function poll (requestParams, { isValid, delay = 1000, maxTimes = 1 }) {
 19. ts中interface和type的区别(2020-09-23 阿里)
 
 20. this.$set(2020-09-23 涂鸦智能)
+
+21. 洗牌算法(2020-09-26 大搜车)
