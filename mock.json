@@ -1,0 +1,22 @@
+{
+  "blocks": [{
+    "title": "lamp-form-注册新用户",
+    "value": "form-register",
+    "key": "form-register",
+    "description": "用户填写必须的信息以注册新用户。",
+    "url": "https://github.com/ant-design/ant-design-blocks/tree/master/form-register",
+    "type": "block",
+    "path": "form-register",
+    "isPage": false,
+    "defaultPath": "/form-register",
+    "img": "https://raw.githubusercontent.com/ant-design/ant-design-blocks/master/form-register/snapshot.png",
+    "tags": [
+      "表单"
+    ],
+    "name": "form-注册新用户",
+    "previewUrl": "https://ant.design/components/form-cn/#components-form-demo-register",
+    "features": [
+      "antd"
+    ]
+  }]
+}
